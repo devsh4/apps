@@ -1,0 +1,83 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.apptrial.HomeActivity$PlaceholderFragment"
+    android:background="#305B8C"
+     >
+     
+     <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="250dp"
+        android:layout_height="300dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="48dp"
+        android:src="@drawable/nik" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView3"
+        android:layout_alignLeft="@+id/imageView3"
+        android:layout_marginBottom="40dp"
+        android:layout_marginLeft="15dp"
+        android:rotation="330"
+        
+        android:src="@drawable/diwas"
+        
+         />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imageView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:rotation="330"
+        android:visibility="invisible"
+        android:src="@drawable/haggu" />
+
+    <Button
+        android:id="@+id/btnMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnChitra"
+        android:layout_alignBottom="@+id/btnChitra"
+        android:layout_alignRight="@+id/imageView2"
+        android:background="#E08728"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="Sandesh"
+        android:textColor="#f1f1f2"
+        android:textSize="22sp"
+        android:onClick="open1"
+         />
+
+    <Button
+        android:id="@+id/btnChitra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/imageView3"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="67dp"
+        android:background="#E08728"
+        android:padding="20dp"
+        android:text="Chitra"
+        android:textColor="#f1f1f2"
+        android:textSize="22sp"
+        android:onClick="open2"
+         />
+
+   
+
+</RelativeLayout>

@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.placecom"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="17"
+        android:targetSdkVersion="21" />
+
+    <!-- GCM connects to Google Services. -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- GCM requires a Google account. -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <permission
+        android:name="com.example.placecom.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.example.placecom.permission.C2D_MESSAGE" />
+    <!-- This app has permission to register and receive dataf message. -->
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.placecom.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.example.placecom.MESSAGE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.pushbots.push.PBListener" />
+
+        <receiver
+            android:name="com.pushbots.google.gcm.GCMBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+
+                <!-- Receives the actual messages. -->
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <!-- Receives the registration id. -->
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category android:name="com.example.placecom" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.pushbots.push.DefaultPushHandler" />
+
+        <service android:name="com.pushbots.push.GCMIntentService" />
+        <service
+            android:name="org.openudid.OpenUDID_service"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="org.openudid.GETUDID" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name="com.example.placecom.Login"
+            android:label="@string/title_activity_login" >
+        </activity>
+        <activity
+            android:name="com.example.placecom.Home"
+            android:label="@string/title_activity_home"
+            android:parentActivityName="com.example.placecom.Login" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.placecom.Login" />
+        </activity>
+        <activity
+            android:name="com.example.placecom.Neweruser"
+            android:label="@string/title_activity_neweruser"
+            android:parentActivityName="com.example.placecom.Login" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.placecom.Login" />
+        </activity>
+        <activity
+            android:name="com.example.placecom.Notices"
+            android:label="@string/title_activity_notices"
+            android:parentActivityName="com.example.placecom.Home" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.placecom.Home" />
+        </activity>
+        <activity
+            android:name="com.example.placecom.Recruiters"
+            android:label="@string/title_activity_recruiters"
+            android:parentActivityName="com.example.placecom.Home" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.placecom.Home" />
+        </activity>
+        <activity
+            android:name="com.example.placecom.Defaulter"
+            android:label="@string/title_activity_defaulter"
+            android:parentActivityName="com.example.placecom.Home" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.placecom.Home" />
+        </activity>
+        <activity
+            android:name="com.example.placecom.Xyz"
+            android:label="@string/title_activity_xyz"
+            android:parentActivityName="com.example.placecom.Home" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.placecom.Home" />
+        </activity>
+        <activity
+            android:name="com.example.placecom.Form"
+            android:label="@string/title_activity_form"
+            android:parentActivityName="com.example.placecom.Home" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.placecom.Home" />
+        </activity>
+        <activity
+            android:name="com.example.placecom.Rules"
+            android:label="@string/title_activity_rules"
+            android:parentActivityName="com.example.placecom.Home" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.placecom.Home" />
+        </activity>
+        <activity
+            android:name="com.example.placecom.Alloc"
+            android:label="@string/title_activity_alloc"
+            android:parentActivityName="com.example.placecom.Home" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.placecom.Home" />
+        </activity>
+        <activity
+            android:name="com.example.placecom.Calendar"
+            android:label="@string/title_activity_calendar"
+            android:parentActivityName="com.example.placecom.Home" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.placecom.Home" />
+        </activity>
+        <activity
+            android:name="com.example.placecom.Modify"
+            android:label="@string/title_activity_modify"
+            android:parentActivityName="com.example.placecom.Home" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.placecom.Home" />
+        </activity>
+        <activity
+            android:name="com.example.placecom.Fragment"
+            android:label="@string/title_activity_fragment"
+            android:parentActivityName="com.example.placecom.Xyz" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.placecom.Xyz" />
+        </activity>
+        <activity
+            android:name="com.example.placecom.FragmentB"
+            android:label="@string/title_activity_fragment_b"
+            android:parentActivityName="com.example.placecom.Xyz" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.placecom.Xyz" />
+        </activity>
+        <activity
+            android:name="com.example.placecom.FragmentC"
+            android:label="@string/title_activity_fragment_c"
+            android:parentActivityName="com.example.placecom.Xyz" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.placecom.Xyz" />
+        </activity>
+        <activity
+            android:name="com.example.placecom.FragmentD"
+            android:label="@string/title_activity_fragment_d"
+            android:parentActivityName="com.example.placecom.Xyz" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.placecom.Xyz" />
+        </activity>
+        <activity
+            android:name="com.example.placecom.FragmentE"
+            android:label="@string/title_activity_fragment_e"
+            android:parentActivityName="com.example.placecom.Xyz" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.placecom.Xyz" />
+        </activity>
+        <activity
+            android:name="com.example.placecom.Comm"
+            android:label="@string/title_activity_comm"
+            android:parentActivityName="com.example.placecom.Modify" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.placecom.Modify" />
+        </activity>
+        <activity
+            android:name="com.example.placecom.Attend"
+            android:label="@string/title_activity_attend"
+            android:parentActivityName="com.example.placecom.Modify" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.placecom.Modify" />
+        </activity>
+        <activity
+            android:name="com.example.placecom.Aaa"
+            android:label="@string/title_activity_aaa"
+            android:parentActivityName="com.example.placecom.Comm" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.placecom.Comm" />
+        </activity>
+        <activity
+            android:name="com.example.placecom.Rules1"
+            android:label="@string/title_activity_rules1"
+            android:parentActivityName="com.example.placecom.Rules" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.placecom.Rules" />
+        </activity>
+    </application>
+
+</manifest>

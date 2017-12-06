@@ -1,0 +1,39 @@
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:divider="@color/list_divider"
+        android:dividerHeight="4dp"
+        android:listSelector="@drawable/list_row_selector"
+        android:background="#CC8080"
+        android:paddingLeft="25dp"
+        android:paddingRight="35dp"
+        android:paddingTop="43dp"
+        android:paddingBottom="25dp"
+        android:paddingStart="40dp"
+        android:paddingEnd="40dp"
+        >
+    </ListView>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="RULES"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#ffffff"
+        android:textSize="24dp"
+        android:textStyle="bold"/>
+</RelativeLayout>
+         
+<!-- From: file:/C:/Users/DEV/Desktop/Akash/Placecom/app/src/main/res/layout/activity_rules1.xml -->

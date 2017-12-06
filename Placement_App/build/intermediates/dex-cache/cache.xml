@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\DEV\Desktop\Dev\DEV\Downloads\New folder\extras\android\m2repository\com\android\support\support-annotations\21.0.3\support-annotations-21.0.3.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="4b74cefe1f0c1b819e7260c8627a14674e37fd35">
+        <dex dex="C:\Users\DEV\Desktop\Akash\Placecom\app\build\intermediates\pre-dexed\debug\support-annotations-21.0.3-487bb882a4781893de175f2feac09df0dbfe2802.jar" />
+    </item>
+    <item
+        jar="C:\Users\DEV\Desktop\Akash\Placecom\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
+        <dex dex="C:\Users\DEV\Desktop\Akash\Placecom\app\build\intermediates\pre-dexed\debug\classes-8c2f7cbc0375b78661242ff708e5dc1b4a427e67.jar" />
+    </item>
+    <item
+        jar="C:\Users\DEV\Desktop\Akash\Placecom\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\libs\internal_impl-21.0.3.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
+        <dex dex="C:\Users\DEV\Desktop\Akash\Placecom\app\build\intermediates\pre-dexed\debug\internal_impl-21.0.3-a141561efa1d19919d714b066df2ed0f58e8d723.jar" />
+    </item>
+    <item
+        jar="C:\Users\DEV\Desktop\Akash\Placecom\app\build\intermediates\exploded-aar\com.pushbots\pushbots-lib\2.0.8\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="4d944c14735e53c9a5d0c5f377f26b52f774fe7e">
+        <dex dex="C:\Users\DEV\Desktop\Akash\Placecom\app\build\intermediates\pre-dexed\debug\classes-945f024c8e3f2113b6627fb669e41b6a5cbf2eb9.jar" />
+    </item>
+    <item
+        jar="C:\Users\DEV\Desktop\Akash\Placecom\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.3\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="81d42bf983a8741f4888a6e333e454e4a5e0eeb7">
+        <dex dex="C:\Users\DEV\Desktop\Akash\Placecom\app\build\intermediates\pre-dexed\debug\classes-14c152099bf64b422339af565d3058ce15269173.jar" />
+    </item>
+    <item
+        jar="C:\Users\DEV\Desktop\Akash\Placecom\app\build\intermediates\exploded-aar\com.pushbots\pushbots-lib\2.0.8\libs\universal-image-loader-1.9.3-with-sources.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="03e3948d42b8d78961a092a184af66bd86da42e6">
+        <dex dex="C:\Users\DEV\Desktop\Akash\Placecom\app\build\intermediates\pre-dexed\debug\universal-image-loader-1.9.3-with-sources-4b3fa2ef685f84d268cd5965b40b836c3c82f90e.jar" />
+    </item>
+
+</items>

@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="pushbots-lib-2.0.8">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.pushbots/pushbots-lib/2.0.8/libs/universal-image-loader-1.9.3-with-sources.jar!/" />
+      <root url="file://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.pushbots/pushbots-lib/2.0.8/res" />
+      <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.pushbots/pushbots-lib/2.0.8/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

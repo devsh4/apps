@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="RuleNo.">#666666</color>
+    <color name="details">#888888</color>
+    <color name="list_divider">#ffffff</color>
+    <color name="list_row_start_color">#ccff33</color>
+    <color name="list_row_end_color">#faffeb</color>
+    <color name="list_row_hover_start_color">#faffeb</color>
+    <color name="list_row_hover_end_color">#faffeb</color>
+
+    <color name="list_row_item_color"> #02113f </color>
+</resources>
